@@ -14,6 +14,6 @@ it('renders correctly', () => {
 
 
 test('expect the time to display with the correct time', () => {
-  const app = require('../app/Ap');
+  const app = require('../app/App');
   expect(App.state.time).toEqual(moment().format("LTS");
   });
