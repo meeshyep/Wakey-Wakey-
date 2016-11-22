@@ -5,6 +5,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import moment from "moment";
 import App from "../app/App"
+import TimePicker from "../app/TimePicker"
 
 it('expect the time to display with the correct time', () => {
 var  app = new App();

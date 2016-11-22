@@ -7,8 +7,10 @@ var {
   StyleSheet,
   Text,
   View,
+  Button,
+  Alert
 } = ReactNative;
-
+import moment from "moment";
 export default class TimePicker extends Component {
   static defaultProps = {
     date: new Date(),
@@ -23,6 +25,7 @@ export default class TimePicker extends Component {
   };
 
 
+
   render() {
     return (
       <View>
@@ -33,22 +36,39 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
+      <AlarmSetButton showTime={this.state.date}/>
 
       </View>
     );
-  }
-
-
+  };
 };
 
+class AlarmSetButton extends Component {
+
+  onButtonPress =  () => {
+    Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
+  }
+  render() {
+    return(
+      <View>
+      <Button
+      onPress={this.onButtonPress}
+      title="Set Alarm"
+      />
+      </View>
+    )
+  }
+}
+
+
 class Heading extends Component {
- render() {
-   return (
-     <View>
-       <Text>
-         {this.props.label}
-       </Text>
-     </View>
-   );
- }
+  render() {
+    return (
+      <View>
+      <Text>
+      {this.props.label}
+      </Text>
+      </View>
+    );
+  }
 }
