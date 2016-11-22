@@ -24,12 +24,7 @@ test('expect the time to display with the correct time', () => {
   });
 
 
-
-
-
-
-
-// 
+//
 // test('expect the initial date in date picker to be current date', () => {
 //     defaultProps = {
 //     date: new Date(),
