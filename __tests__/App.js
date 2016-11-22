@@ -6,8 +6,11 @@ import renderer from 'react-test-renderer';
 import moment from "moment";
 import App from "../app/App"
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e2e9c4ee99df8c458624023189be27c03da88de3
 it('expect the time to display with the correct time', () => {
 var  app = new App();
 
