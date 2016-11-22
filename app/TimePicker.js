@@ -1,16 +1,15 @@
 // 'use strict';
 
-var React = require('react');
+import React, {Component} from 'react';
 var ReactNative = require('react-native');
 var {
   DatePickerIOS,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } = ReactNative;
 
-export default class TimePicker extends React.Component {
+export default class TimePicker extends Component {
   static defaultProps = {
     date: new Date(),
   };
@@ -27,6 +26,7 @@ export default class TimePicker extends React.Component {
   render() {
     return (
       <View>
+      <Heading label="Set alarm time" />
       <DatePickerIOS
       date={this.state.date}
       mode="time"
@@ -40,3 +40,15 @@ export default class TimePicker extends React.Component {
 
 
 };
+
+class Heading extends Component {
+ render() {
+   return (
+     <View>
+       <Text>
+         {this.props.label}
+       </Text>
+     </View>
+   );
+ }
+}

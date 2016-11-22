@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import {
+
   View,
   Text,
   StyleSheet,
@@ -9,20 +10,23 @@ import {
 
 import moment from "moment";
 import KeepAwake from "react-native-keep-awake";
+import TimePicker from "./TimePicker";
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+
     backgroundColor: '#fff',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center'
   },
   timeText: {
+    marginTop: 20,
     color: '#999999',
-    fontSize: 80
+    fontSize: 40
   },
   dateText: {
     color: '#999999',
-    fontSize: 40
+    fontSize: 20
   }
 });
 
@@ -44,13 +48,15 @@ export default class App extends Component {
       })
     }, 1000)
     return(
-      <View style={styles.container}>
+      <View>
       <Text style={styles.timeText}>
         {this.state.time}
        </Text>
        <Text style={styles.dateText}>
        {this.state.date}
        </Text>
+
+       <TimePicker />
       </View>
     );
   }
