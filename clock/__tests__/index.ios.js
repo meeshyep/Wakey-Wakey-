@@ -1,7 +1,7 @@
-import React from 'react-native';
+import 'react-native';
 import React from 'react';
 import Index from '../index.ios.js';
-import App from "./app/App";
+import App from "../app/App";
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
@@ -14,7 +14,7 @@ it('renders correctly', () => {
 });
 
 test('expect the time to display with the correct time', () => {
-  const app =
+  const app = {
     time: moment().format("LTS"),
     date: moment().format("LL")
     };
@@ -29,14 +29,14 @@ test('expect the time to display with the correct time', () => {
 
 
 
-
-test('expect the initial date in date picker to be current date', () => {
-   defaultProps = {
-    date: new Date(),
-  };
-  state = {
-    date: this.props.date
-  };
-
-  expect(state.date).toEqual(moment().format("LL"));
-});
+// 
+// test('expect the initial date in date picker to be current date', () => {
+//     defaultProps = {
+//     date: new Date(),
+//   };
+//   state = {
+//     date: this.props.date
+//   };
+//
+//   expect(state.date).toEqual(moment().format("LL"));
+// });
