@@ -27,9 +27,9 @@ I can tap a button to turn the alarm off
 ```
 ```
 **Features to implement for V2**
-    1. Snooze
-    2. Location based
-    3. QR code to turn off
-    4. Voice activation
+    1. Snooze <br>
+    2. Location based <br>
+    3. QR code to turn off <br>
+    4. Voice activation <br>
     5. iOS
 ```
