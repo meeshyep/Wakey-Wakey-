@@ -26,7 +26,7 @@ I can tap a button to turn the alarm off
 ####V2
 ```
 ```
-**Features to implement for V2**
+**Features to implement for V2** <br>
     1. Snooze <br>
     2. Location based <br>
     3. QR code to turn off <br>
