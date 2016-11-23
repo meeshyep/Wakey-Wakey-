@@ -5,10 +5,10 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import moment from "moment";
 import App from "../app/App"
-
+import TimePicker from "../app/TimePicker"
+import {AlarmSetButton} from "../app/TimePicker"
 it('expect the time to display with the correct time', () => {
 var  app = new App();
-
   expect(app.state.time).toEqual(moment().format("LTS"));
   expect(app.state.date).toEqual(moment().format("LL"));
   });
