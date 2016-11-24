@@ -5,12 +5,12 @@ import {
   Text,
   View
 } from 'react-native';
-import App from "./app/App";
+import ClockCamera from "./app/TimePicker.js";
 
 
 export default class clock extends Component {
   render() {
-    return(<App />)
+    return(<ClockCamera />)
   }
 }
 
