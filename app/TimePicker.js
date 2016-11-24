@@ -11,7 +11,37 @@ var {
   Alert,
 } = ReactNative;
 import moment from "moment";
-import Camera from "react-native-camera";
+import Camera from "react-native-camera";const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  
+  }
+});
+
+var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  text1: {
+    marginTop: 20
+  },
+  preview: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    // height: Dimensions.get('window').height,
+    // width: Dimensions.get('window').width
+  },
+  capture: {
+    flex: 0,
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    color: '#000',
+    padding: 10,
+    margin: 40
+  }
+});
 
 export default class ClockCamera extends Component {
   render() {
@@ -21,9 +51,8 @@ export default class ClockCamera extends Component {
       ref={(cam) => {
         this.camera = cam;
       }}
-      // style={styles.preview}
-      aspect={Camera.constants.Aspect.fill}>
-      <Text onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
+      aspect={Camera.constants.Aspect.fit}>
+      <Text style={styles.text1} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
       </Camera>
       </View>
     );
@@ -35,27 +64,6 @@ export default class ClockCamera extends Component {
     .catch(err => console.error(err));
   }
 }
-
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    // height: Dimensions.get('window').height,
-    // width: Dimensions.get('window').width
-  },
-  capture: {
-    flex: 0,
-    // backgroundcolor: '#fff',
-    borderRadius: 5,
-    color: '#000',
-    padding: 10,
-    margin: 40
-  }
-});
 
 export class TimePicker extends Component {
   static defaultProps = {
