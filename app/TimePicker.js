@@ -9,7 +9,6 @@ var {
   View,
   Button,
   Alert,
-  ListView
 } = ReactNative;
 import moment from "moment";
 
@@ -38,7 +37,7 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
-      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)} getTimes = {Store.get.bind(Store)}/>
+      <AlarmSetButton title="Set Alarm" showTime={this.state.date}/>
       </View>
     );
   };
@@ -46,11 +45,9 @@ export default class TimePicker extends Component {
 var Store = {
   _alarmTimes: ["alarmTime"],
   set: function(time) {
-    console.log(this._alarmTimes)
     this._alarmTimes.push(time);
   },
   get: function(){
-    console.log("get called");
     return this._alarmTimes;
   }
 };
@@ -97,27 +94,3 @@ class Heading extends Component {
     );
   }
 }
-
-
-// class TimesListView extends Component {
-//
-//   constructor(props) {
-//     super(props);
-//     this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-//     this.state = {
-//       dataSource: this.ds.cloneWithRows(this.props.times()),
-//     };
-//   }
-//   render() {
-//
-//
-//     return (
-//       <View>
-//       <ListView
-//       dataSource={this.state.dataSource}
-//       renderRow={(rowData) => <Text>{rowData}</Text>}
-//       />
-//       </View>
-//     );
-//   }
-// }
