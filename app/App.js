@@ -56,6 +56,7 @@ export default class App extends Component {
        {this.state.date}
        </Text>
 
+
        <TimePicker />
       </View>
     );

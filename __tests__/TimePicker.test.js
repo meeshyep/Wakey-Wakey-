@@ -13,7 +13,7 @@ describe('Time picker', ()=>{
 });
 describe('AlarmSetButton', ()=>{
   it('confirms the selected time', ()=>{
-
+console.log((new TimePicker(TimePicker.defaultProps)));
 
   });
 

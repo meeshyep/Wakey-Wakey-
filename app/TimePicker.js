@@ -9,9 +9,9 @@ var {
   View,
   Button,
   Alert,
-  ListView
 } = ReactNative;
 import moment from "moment";
+
 export default class TimePicker extends Component {
   static defaultProps = {
     date: new Date(),
@@ -37,34 +37,51 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
-      <AlarmSetButton showTime={this.state.date}/>
-      <TimesListView onChange={TimesListView.addTimeToList}/>
+      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)} getTimes = {Store.get.bind(Store)}/>
       </View>
     );
   };
 };
-var userAlarmTimes = ["initial time"];
+var Store = {
+  _alarmTimes: ["alarmTime"],
+  set: function(time) {
+    this._alarmTimes.push(time);
+  },
+  get: function(){
+    return this._alarmTimes;
+  }
+};
+
+function calculateTimeDiff(alarmTime) {
+  var timeTillAlarm = alarmTime - (new Date());
+  return timeTillAlarm;
+}
+
+var Timer = {
+
+  start: function(time) {
+
+    setTimeout(()=>{Alert.alert("Wake Up")},calculateTimeDiff(time))
+  }
+};
 export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
-    var alarmTime = this.props.showTime;
-    userAlarmTimes.push(moment(alarmTime).format("LT"));
-    new TimesListView(userAlarmTimes);
-    console.log(new TimesListView(userAlarmTimes));
-    Alert.alert("You set the alarm to \n" + moment(alarmTime).format("LT"));
-   }
+    this.props.onTimeSet(this.props.showTime);
+    Timer.start(this.props.showTime);
+    Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
+  }
   render() {
     return(
       <View>
       <Button
       onPress={this.onButtonPress}
-      title="Set Alarm"
+      title={this.props.title}
       />
       </View>
     )
   }
 }
-
 
 class Heading extends Component {
   render() {
@@ -73,33 +90,6 @@ class Heading extends Component {
       <Text>
       {this.props.label}
       </Text>
-      </View>
-    );
-  }
-}
-
-
-class TimesListView extends Component {
-  constructor() {
-    super();
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    console.log(ds);
-    this.state = {
-      dataSource: ds.cloneWithRows(userAlarmTimes),
-    };
-  }
-addTimeToList = ()=>{
-  this.setState({
-    dataSource: ds.cloneWithRows(userAlarmTimes)
-  })
-}
-  render() {
-    return (
-      <View>
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
-      />
       </View>
     );
   }
