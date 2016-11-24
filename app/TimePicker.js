@@ -61,10 +61,10 @@ function calculateTimeDiff(alarmTime) {
 }
 
 function soundAlarm() {
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
   AudioPlayer.play('woopwoop.mp3')
 }
 
