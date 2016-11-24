@@ -12,6 +12,10 @@ var {
 } = ReactNative;
 import moment from "moment";
 
+var Sound = require('react-native-simple-sound');
+Sound.enable(true);
+Sound.prepare('Rooster.mp3');
+
 export default class TimePicker extends Component {
   static defaultProps = {
     date: new Date(),
@@ -52,6 +56,18 @@ var Store = {
   }
 };
 
+class Heading extends Component {
+  render() {
+    return (
+      <View>
+      <Text>
+      {this.props.label}
+      </Text>
+      </View>
+    );
+  }
+}
+
 function calculateTimeDiff(alarmTime) {
   var timeTillAlarm = alarmTime - (new Date());
   return timeTillAlarm;
@@ -61,7 +77,7 @@ var Timer = {
 
   start: function(time) {
 
-    setTimeout(()=>{Alert.alert("Wake Up")},calculateTimeDiff(time))
+    setTimeout(()=>{Sound.play()},calculateTimeDiff(time))
   }
 };
 export class AlarmSetButton extends Component {
@@ -80,17 +96,5 @@ export class AlarmSetButton extends Component {
       />
       </View>
     )
-  }
-}
-
-class Heading extends Component {
-  render() {
-    return (
-      <View>
-      <Text>
-      {this.props.label}
-      </Text>
-      </View>
-    );
   }
 }

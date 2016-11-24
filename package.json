@@ -11,7 +11,9 @@
     "react": "15.3.2",
     "react-native": "0.37.0",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
-    "react-native-keep-awake": "^1.0.7"
+    "react-native-keep-awake": "^1.0.7",
+    "react-native-simple-sound": "^1.0.0",
+    "react-native-sound": "^0.8.3"
   },
   "jest": {
     "preset": "jest-react-native"
