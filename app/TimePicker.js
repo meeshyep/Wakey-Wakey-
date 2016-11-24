@@ -1,6 +1,7 @@
 // 'use strict';
 
 import React, {Component} from 'react';
+var AudioPlayer = require('react-native-audioplayer');
 var ReactNative = require('react-native');
 var {
   DatePickerIOS,
@@ -61,7 +62,7 @@ var Timer = {
 
   start: function(time) {
 
-    setTimeout(()=>{Alert.alert("Wake Up")},calculateTimeDiff(time))
+    setTimeout(()=>{AudioPlayer.play('woopwoop.mp3')},calculateTimeDiff(time))
   }
 };
 export class AlarmSetButton extends Component {

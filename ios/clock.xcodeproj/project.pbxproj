@@ -23,6 +23,11 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		66A1B5195B6B4D54B31696BC /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE51C04FC9C4EB39F65E0E0 /* libRCTCamera.a */; };
+<<<<<<< Updated upstream
+=======
+		68A4BFD41DE7519700AAAA94 /* woopwoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68A4BFD31DE7519700AAAA94 /* woopwoop.mp3 */; };
+		6DDA2A5A97FE460D8D1D2D9E /* libRNAudioPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E202EE8864E88AB2368A1 /* libRNAudioPlayer.a */; };
+>>>>>>> Stashed changes
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -90,62 +95,111 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+<<<<<<< Updated upstream
 		68A4BFE31DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFAD1DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = F29058D4357F40B9BE572FD3 /* RCTCamera.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
 			remoteInfo = RCTCamera;
 		};
+<<<<<<< Updated upstream
 		68A4BFE81DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFB21DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
 			remoteInfo = "RCTImage-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4BFEC1DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFB61DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RCTLinking-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4BFF01DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFBA1DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
 			remoteInfo = "RCTNetwork-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4BFF41DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFBE1DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
 			remoteInfo = "RCTSettings-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4BFF81DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFC21DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
 			remoteInfo = "RCTText-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4BFFD1DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFC71DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
 			remoteInfo = "RCTWebSocket-tvOS";
 		};
+<<<<<<< Updated upstream
 		68A4C0011DE7541300AAAA94 /* PBXContainerItemProxy */ = {
+=======
+		68A4BFCB1DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+>>>>>>> Stashed changes
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
 			remoteInfo = "React-tvOS";
 		};
+<<<<<<< Updated upstream
+=======
+		68A4BFCF1DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190289FF1EFC43EA8592E814 /* RNAudioPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBE79C421B01EB5A00446766;
+			remoteInfo = RNAudioPlayer;
+		};
+		68A4BFD11DE74FC800AAAA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190289FF1EFC43EA8592E814 /* RNAudioPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBE79C4D1B01EB5B00446766;
+			remoteInfo = RNAudioPlayerTests;
+		};
+>>>>>>> Stashed changes
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -182,9 +236,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = clock/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = clock/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		6AE51C04FC9C4EB39F65E0E0 /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+=======
+		190289FF1EFC43EA8592E814 /* RNAudioPlayer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAudioPlayer.xcodeproj; path = "../node_modules/react-native-audioplayer/RNAudioPlayer.xcodeproj"; sourceTree = "<group>"; };
+		68A4BFD31DE7519700AAAA94 /* woopwoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = woopwoop.mp3; path = ../../../../../Downloads/woopwoop.mp3; sourceTree = "<group>"; };
+		6AE51C04FC9C4EB39F65E0E0 /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		BA0E202EE8864E88AB2368A1 /* libRNAudioPlayer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAudioPlayer.a; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F29058D4357F40B9BE572FD3 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +275,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				66A1B5195B6B4D54B31696BC /* libRCTCamera.a in Frameworks */,
+				6DDA2A5A97FE460D8D1D2D9E /* libRNAudioPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +302,11 @@
 			isa = PBXGroup;
 			children = (
 				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+<<<<<<< Updated upstream
 				68A4BFE91DE7541300AAAA94 /* libRCTImage-tvOS.a */,
+=======
+				68A4BFB31DE74FC800AAAA94 /* libRCTImage-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,7 +315,11 @@
 			isa = PBXGroup;
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+<<<<<<< Updated upstream
 				68A4BFF11DE7541300AAAA94 /* libRCTNetwork-tvOS.a */,
+=======
+				68A4BFBB1DE74FC800AAAA94 /* libRCTNetwork-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,7 +353,11 @@
 			isa = PBXGroup;
 			children = (
 				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+<<<<<<< Updated upstream
 				68A4BFF51DE7541300AAAA94 /* libRCTSettings-tvOS.a */,
+=======
+				68A4BFBF1DE74FC800AAAA94 /* libRCTSettings-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,7 +366,11 @@
 			isa = PBXGroup;
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+<<<<<<< Updated upstream
 				68A4BFFE1DE7541300AAAA94 /* libRCTWebSocket-tvOS.a */,
+=======
+				68A4BFC81DE74FC800AAAA94 /* libRCTWebSocket-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,15 +393,35 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
+<<<<<<< Updated upstream
 				68A4C0021DE7541300AAAA94 /* libReact-tvOS.a */,
+=======
+				68A4BFCC1DE74FC800AAAA94 /* libReact-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		68A4BFDF1DE7541200AAAA94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				68A4BFE41DE7541300AAAA94 /* libRCTCamera.a */,
+=======
+		68A4BFA71DE74FC800AAAA94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A4BFAE1DE74FC800AAAA94 /* libRCTCamera.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68A4BFA91DE74FC800AAAA94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A4BFD01DE74FC800AAAA94 /* libRNAudioPlayer.a */,
+				68A4BFD21DE74FC800AAAA94 /* RNAudioPlayerTests.xctest */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,7 +430,11 @@
 			isa = PBXGroup;
 			children = (
 				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+<<<<<<< Updated upstream
 				68A4BFED1DE7541300AAAA94 /* libRCTLinking-tvOS.a */,
+=======
+				68A4BFB71DE74FC800AAAA94 /* libRCTLinking-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,6 +453,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				F29058D4357F40B9BE572FD3 /* RCTCamera.xcodeproj */,
+				190289FF1EFC43EA8592E814 /* RNAudioPlayer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -357,7 +462,11 @@
 			isa = PBXGroup;
 			children = (
 				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+<<<<<<< Updated upstream
 				68A4BFF91DE7541300AAAA94 /* libRCTText-tvOS.a */,
+=======
+				68A4BFC31DE74FC800AAAA94 /* libRCTText-tvOS.a */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +474,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				68A4BFD31DE7519700AAAA94 /* woopwoop.mp3 */,
 				13B07FAE1A68108700A75B9A /* clock */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* clockTests */,
@@ -454,7 +564,11 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
+<<<<<<< Updated upstream
 					ProductGroup = 68A4BFDF1DE7541200AAAA94 /* Products */;
+=======
+					ProductGroup = 68A4BFA71DE74FC800AAAA94 /* Products */;
+>>>>>>> Stashed changes
 					ProjectRef = F29058D4357F40B9BE572FD3 /* RCTCamera.xcodeproj */;
 				},
 				{
@@ -492,6 +606,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 68A4BFA91DE74FC800AAAA94 /* Products */;
+					ProjectRef = 190289FF1EFC43EA8592E814 /* RNAudioPlayer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -559,6 +677,7 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+<<<<<<< Updated upstream
 		68A4BFE41DE7541300AAAA94 /* libRCTCamera.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -613,6 +732,76 @@
 			fileType = archive.ar;
 			path = "libReact-tvOS.a";
 			remoteRef = 68A4C0011DE7541300AAAA94 /* PBXContainerItemProxy */;
+=======
+		68A4BFAE1DE74FC800AAAA94 /* libRCTCamera.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTCamera.a;
+			remoteRef = 68A4BFAD1DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFB31DE74FC800AAAA94 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 68A4BFB21DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFB71DE74FC800AAAA94 /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 68A4BFB61DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFBB1DE74FC800AAAA94 /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 68A4BFBA1DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFBF1DE74FC800AAAA94 /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 68A4BFBE1DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFC31DE74FC800AAAA94 /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 68A4BFC21DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFC81DE74FC800AAAA94 /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 68A4BFC71DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFCC1DE74FC800AAAA94 /* libReact-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-tvOS.a";
+			remoteRef = 68A4BFCB1DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFD01DE74FC800AAAA94 /* libRNAudioPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAudioPlayer.a;
+			remoteRef = 68A4BFCF1DE74FC800AAAA94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68A4BFD21DE74FC800AAAA94 /* RNAudioPlayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RNAudioPlayerTests.xctest;
+			remoteRef = 68A4BFD11DE74FC800AAAA94 /* PBXContainerItemProxy */;
+>>>>>>> Stashed changes
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -645,6 +834,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				68A4BFD41DE7519700AAAA94 /* woopwoop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +912,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clock.app/clock";
@@ -738,6 +929,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -756,6 +948,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+					"$(SRCROOT)/../node_modules/react-native-audioplayer",
 				);
 				INFOPLIST_FILE = clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -779,6 +972,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+					"$(SRCROOT)/../node_modules/react-native-audioplayer",
 				);
 				INFOPLIST_FILE = clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -831,6 +1025,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+					"$(SRCROOT)/../node_modules/react-native-audioplayer",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -872,6 +1067,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+					"$(SRCROOT)/../node_modules/react-native-audioplayer",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
