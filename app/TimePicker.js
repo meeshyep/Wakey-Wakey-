@@ -38,28 +38,42 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
-      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)}/>
-      <TimesListView onChange={TimesListView.addTimeToList}/>
+      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)} getTimes = {Store.get.bind(Store)}/>
       </View>
     );
   };
 };
 var Store = {
-  _alarmTimes: [],
+  _alarmTimes: ["alarmTime"],
   set: function(time) {
+    console.log(this._alarmTimes)
     this._alarmTimes.push(time);
-  }
+  },
   get: function(){
+    console.log("get called");
     return this._alarmTimes;
   }
+};
+
+function calculateTimeDiff(alarmTime) {
+  var timeTillAlarm = alarmTime - (new Date(2016,11,24,13,10,25));
+  return timeTillAlarm;
 }
+
+var Timer = {
+
+  start: function(time) {
+
+    setTimeout(()=>{Alert.alert("Wake Up")},calculateTimeDiff(time))
+  }
+};
 export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
     this.props.onTimeSet(this.props.showTime);
+    Timer.start(new Date(2016,11,24,13,10,30))
     Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
-
-   }
+  }
   render() {
     return(
       <View>
@@ -71,8 +85,6 @@ export class AlarmSetButton extends Component {
     )
   }
 }
-
-console.log(Store.get);
 
 class Heading extends Component {
   render() {
@@ -87,27 +99,25 @@ class Heading extends Component {
 }
 
 
-class TimesListView extends Component {
-  constructor() {
-    super();
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    this.state = {
-      dataSource: ds.cloneWithRows(userAlarmTimes),
-    };
-  }
-addTimeToList = ()=>{
-  this.setState({
-    dataSource: ds.cloneWithRows(userAlarmTimes)
-  })
-}
-  render() {
-    return (
-      <View>
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
-      />
-      </View>
-    );
-  }
-}
+// class TimesListView extends Component {
+//
+//   constructor(props) {
+//     super(props);
+//     this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+//     this.state = {
+//       dataSource: this.ds.cloneWithRows(this.props.times()),
+//     };
+//   }
+//   render() {
+//
+//
+//     return (
+//       <View>
+//       <ListView
+//       dataSource={this.state.dataSource}
+//       renderRow={(rowData) => <Text>{rowData}</Text>}
+//       />
+//       </View>
+//     );
+//   }
+// }
