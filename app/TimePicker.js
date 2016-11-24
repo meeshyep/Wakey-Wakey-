@@ -37,7 +37,7 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
-      <AlarmSetButton title="Set Alarm" showTime={this.state.date}/>
+      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)} getTimes = {Store.get.bind(Store)}/>
       </View>
     );
   };
