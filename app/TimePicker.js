@@ -12,6 +12,7 @@ var {
   ListView
 } = ReactNative;
 import moment from "moment";
+
 export default class TimePicker extends Component {
   static defaultProps = {
     date: new Date(),
@@ -37,34 +38,41 @@ export default class TimePicker extends Component {
       onDateChange={this.onDateChange}
       minuteInterval={1}
       />
-      <AlarmSetButton showTime={this.state.date}/>
+      <AlarmSetButton title="Set Alarm" showTime={this.state.date} onTimeSet={Store.set.bind(Store)}/>
       <TimesListView onChange={TimesListView.addTimeToList}/>
       </View>
     );
   };
 };
-var userAlarmTimes = ["initial time"];
+var Store = {
+  _alarmTimes: [],
+  set: function(time) {
+    this._alarmTimes.push(time);
+  }
+  get: function(){
+    return this._alarmTimes;
+  }
+}
 export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
-    var alarmTime = this.props.showTime;
-    userAlarmTimes.push(moment(alarmTime).format("LT"));
-    new TimesListView(userAlarmTimes);
-    console.log(new TimesListView(userAlarmTimes));
-    Alert.alert("You set the alarm to \n" + moment(alarmTime).format("LT"));
+    this.props.onTimeSet(this.props.showTime);
+    Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
+
    }
   render() {
     return(
       <View>
       <Button
       onPress={this.onButtonPress}
-      title="Set Alarm"
+      title={this.props.title}
       />
       </View>
     )
   }
 }
 
+console.log(Store.get);
 
 class Heading extends Component {
   render() {
@@ -83,7 +91,6 @@ class TimesListView extends Component {
   constructor() {
     super();
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    console.log(ds);
     this.state = {
       dataSource: ds.cloneWithRows(userAlarmTimes),
     };
