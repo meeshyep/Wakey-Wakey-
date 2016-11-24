@@ -1,6 +1,7 @@
 // 'use strict';
 
 import React, {Component} from 'react';
+var AudioPlayer = require('react-native-audioplayer');
 var ReactNative = require('react-native');
 var {
   DatePickerIOS,
@@ -14,12 +15,14 @@ import moment from "moment";
 
 export default class TimePicker extends Component {
   static defaultProps = {
-    date: new Date(),
+    date: new Date()
   };
 
   state = {
     date: this.props.date
   };
+
+
 
   onDateChange = (date) => {
     this.setState({date: date});
@@ -57,18 +60,27 @@ function calculateTimeDiff(alarmTime) {
   return timeTillAlarm;
 }
 
+function soundAlarm() {
+  AudioPlayer.play('woopwoop.mp3')
+  AudioPlayer.play('woopwoop.mp3')
+  AudioPlayer.play('woopwoop.mp3')
+  AudioPlayer.play('woopwoop.mp3')
+  AudioPlayer.play('woopwoop.mp3')
+}
+
+
+
 var Timer = {
-
   start: function(time) {
-
-    setTimeout(()=>{Alert.alert("Wake Up")},calculateTimeDiff(time))
+    setTimeout(soundAlarm,calculateTimeDiff(time))
   }
 };
 export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
-    this.props.onTimeSet(this.props.showTime);
-    Timer.start(this.props.showTime);
+    this.props.onTimeSet(this.props.showTimes);
+    console.log(this.props.showTime.setSeconds(0));
+    Timer.start(this.props.showTime.setSeconds(0));
     Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
   }
   render() {
