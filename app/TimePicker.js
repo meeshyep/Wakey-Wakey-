@@ -56,7 +56,7 @@ var Store = {
 };
 
 function calculateTimeDiff(alarmTime) {
-  var timeTillAlarm = alarmTime - (new Date(2016,11,24,13,10,25));
+  var timeTillAlarm = alarmTime - (new Date());
   return timeTillAlarm;
 }
 
@@ -71,7 +71,7 @@ export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
     this.props.onTimeSet(this.props.showTime);
-    Timer.start(new Date(2016,11,24,13,10,30))
+    Timer.start(this.props.showTime);
     Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
   }
   render() {
