@@ -70,9 +70,12 @@ function soundAlarm() {
 
 
 
+
 var Timer = {
   start: function(time) {
     setTimeout(soundAlarm,calculateTimeDiff(time))
+
+
   }
 };
 export class AlarmSetButton extends Component {
