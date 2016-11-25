@@ -61,11 +61,10 @@ function calculateTimeDiff(alarmTime) {
 }
 
 function soundAlarm() {
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
-  AudioPlayer.play('woopwoop.mp3')
+  console.log("hi");
+  AudioPlayer.play('Rooster.mp3');
+  console.log('hi2');
+
 }
 
 
@@ -79,7 +78,6 @@ export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
     this.props.onTimeSet(this.props.showTimes);
-    console.log(this.props.showTime.setSeconds(0));
     Timer.start(this.props.showTime.setSeconds(0));
     Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
   }
