@@ -60,12 +60,14 @@ var styles = StyleSheet.create({
 
 export class TimePicker extends Component {
   static defaultProps = {
-    date: new Date(),
+    date: new Date()
   };
 
   state = {
     date: this.props.date
   };
+
+
 
   onDateChange = (date) => {
     this.setState({date: date});
@@ -102,18 +104,31 @@ function calculateTimeDiff(alarmTime) {
   return timeTillAlarm;
 }
 
-var Timer = {
+function soundAlarm() {
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3'),
+  AudioPlayer.play('woopwoop.mp3')
+}
 
-  start: function(time) {
 
+
+<<<<<<< HEAD
     setTimeout(()=>{AudioPlayer.play('woopwoop.mp3')},calculateTimeDiff(time))
+=======
+var Timer = {
+  start: function(time) {
+    setTimeout(soundAlarm,calculateTimeDiff(time))
+>>>>>>> 9bcf34419233068e8618db4c0aed499beaf4ee48
   }
 };
 export class AlarmSetButton extends Component {
 
   onButtonPress =  () => {
-    this.props.onTimeSet(this.props.showTime);
-    Timer.start(this.props.showTime);
+    this.props.onTimeSet(this.props.showTimes);
+    console.log(this.props.showTime.setSeconds(0));
+    Timer.start(this.props.showTime.setSeconds(0));
     Alert.alert("You set the alarm to \n" + moment(this.props.showTime).format("LT"));
   }
   render() {

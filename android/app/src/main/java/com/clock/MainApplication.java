@@ -4,6 +4,10 @@ import android.app.Application;
 import android.util.Log;
 
 import com.facebook.react.ReactApplication;
+<<<<<<< HEAD
+=======
+import com.corbt.keepawake.KCKeepAwakePackage;
+>>>>>>> 9bcf34419233068e8618db4c0aed499beaf4ee48
 import com.sh3rawi.RNAudioPlayer.RNAudioPlayer;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.facebook.react.ReactInstanceManager;
@@ -26,6 +30,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+<<<<<<< HEAD
+=======
+            new KCKeepAwakePackage(),
+>>>>>>> 9bcf34419233068e8618db4c0aed499beaf4ee48
             new RNAudioPlayer(),
             new RCTCameraPackage()
       );
