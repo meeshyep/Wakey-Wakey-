@@ -15,8 +15,13 @@ import Camera from "react-native-camera";const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  
-  }
+
+import Camera from "react-native-camera";
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+
 });
 
 var styles = StyleSheet.create({
